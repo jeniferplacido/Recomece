@@ -1,14 +1,21 @@
 # Projeto_Integrador
 
-NetONGs
+<h1>
+ NetONGs </h1>
 
 Integrantes (Grupo 4): 
-→👨‍💻 Erick
-→👨‍💻Jéssica
-→👨‍💻João
-→👨‍💻Raul
-→👨‍💻Thiago
-→👨‍💻Vitória
+<p>
+→👨‍💻 Erick</p>
+<p>
+→👨‍💻Jéssica</p>
+<p>
+→👨‍💻João</p>
+<p>
+→👨‍💻Raul</p>
+<p>
+→👨‍💻Thiago</p>
+<p>
+ →👨‍💻Vitória</p>
 
 Cada integrante do grupo compartilhou seu ponto de vista e ideias para o projeto, moldando e lapidando cada vez mais uma ideia que irá colaborar com diversas pessoas e ONGs ao redor do mundo, visando estar incluso nos seguintes objetivos de desenvolvimento sustentável nos quais as Nações Unidas contribuem no momento:
 O bem estar, a erradicação da pobreza, saúde e bem-estar, redução das desigualdades, paz, justiça, instituições eficazes, parcerias e meios de implementação.
