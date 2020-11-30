@@ -3,13 +3,13 @@
 <h3>
 Integrantes (Grupo 4): </h3>
 <p>
-→👨‍💻Erick</p>
+→👱‍♀️Ana</p>
+<p>
+ →👸Jenifer</p>
 <p>
 →🐢Jéssica</p>
 <p>
 →👾João</p>
-<p>
-→👨Raul</p>
 <p>
 →😇Thiago</p>
 <p>
