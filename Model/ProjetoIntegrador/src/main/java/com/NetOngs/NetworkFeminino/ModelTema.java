@@ -11,7 +11,7 @@ import javax.persistence.Table;
 @Table(name = "Tema")
 public class ModelTema {
 	
-	@Id
+	@Id	
 	@Column
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id_tema;
