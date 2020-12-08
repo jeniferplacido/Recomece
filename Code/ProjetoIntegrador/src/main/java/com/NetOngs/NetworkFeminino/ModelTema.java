@@ -6,12 +6,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "Tema")
 public class ModelTema {
 	
-	@Id
+	@Id	
 	@Column
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id_tema;
@@ -20,6 +21,7 @@ public class ModelTema {
 	private String categoria;
 	
 	@Column
+	@NotNull
 	private String nome;
 	
 	@Column
@@ -57,5 +59,11 @@ public class ModelTema {
 		this.classificacaoIndicativa = classificacaoIndicativa;
 	}
 	
+<<<<<<< HEAD:Model/ProjetoIntegrador/src/main/java/com/NetOngs/NetworkFeminino/ModelTema.java
+=======
+	//Getters and Setters
+	
+	
+>>>>>>> ae6b969c06b266c1458a21c67fa634f03e07b583:Code/ProjetoIntegrador/src/main/java/com/NetOngs/NetworkFeminino/ModelTema.java
 
 }
