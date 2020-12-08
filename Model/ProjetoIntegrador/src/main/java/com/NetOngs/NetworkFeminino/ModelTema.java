@@ -12,7 +12,7 @@ import javax.validation.constraints.NotNull;
 @Table(name = "Tema")
 public class ModelTema {
 	
-	@Id	
+	@Id
 	@Column
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id_tema;
@@ -58,9 +58,17 @@ public class ModelTema {
 	public void setClassificacaoIndicativa(int classificacaoIndicativa) {
 		this.classificacaoIndicativa = classificacaoIndicativa;
 	}
+<<<<<<< HEAD
 	
 	//Getters and Setters
 	
+=======
+
+>>>>>>> 55916e4ab1dcfcda31cdfdcfe1136d3713e4d1d1
 	
 
-}
+		
+	}
+	
+
+

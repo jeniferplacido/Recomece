@@ -1,4 +1,5 @@
 package com.NetOngs.NetworkFeminino;
+<<<<<<< HEAD
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -37,3 +38,9 @@ public class Swagger {
         "Desenvolvedores Full Stack Java");
 }
 }
+=======
+
+public class Swagger {
+
+}
+>>>>>>> 55916e4ab1dcfcda31cdfdcfe1136d3713e4d1d1
