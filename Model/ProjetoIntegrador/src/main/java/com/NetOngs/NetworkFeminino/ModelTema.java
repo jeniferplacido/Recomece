@@ -56,11 +56,6 @@ public class ModelTema {
 	public void setClassificacaoIndicativa(int classificacaoIndicativa) {
 		this.classificacaoIndicativa = classificacaoIndicativa;
 	}
-
 	
 
-		
-	}
-	
-
-
+}

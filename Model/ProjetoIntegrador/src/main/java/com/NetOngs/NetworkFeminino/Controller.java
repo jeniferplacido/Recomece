@@ -49,6 +49,12 @@ package com.NetOngs.NetworkFeminino;
 						.orElse(ResponseEntity.notFound().build());
 						
 			}
+			
+			@GetMapping("/categoria/{categoria}")
+			public ResponseEntity<List<ModelTema>> getByCategoria(@PathVariable String categoria){
+				return ResponseEntity.ok(repository.findAllByCategoriaContainingIgnoreCase(categoria));
+			}
+			
 			@PutMapping("/put/{id}")
 			public ModelTema atualizar(@PathVariable Long id, @RequestBody ModelTema tabela) {
 				tabela.setId_tema(id);
