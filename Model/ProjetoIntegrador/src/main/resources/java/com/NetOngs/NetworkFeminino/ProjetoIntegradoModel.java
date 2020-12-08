@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 
 
 @Entity
@@ -22,6 +23,7 @@ public class ProjetoIntegradoModel {
 	private Long id_usuario;
 	
 	@Column
+	@NotNull
 	private String nomeUsuario;
 	
 	@Column
