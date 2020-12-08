@@ -49,19 +49,28 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 55916e4ab1dcfcda31cdfdcfe1136d3713e4d1d1
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
 			<version>2.9.2</version>
 		</dependency>
+<<<<<<< HEAD
 		<!-- Gera a interface gráfica para a documentação -->
+=======
+>>>>>>> 55916e4ab1dcfcda31cdfdcfe1136d3713e4d1d1
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.9.2</version>
 		</dependency>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 55916e4ab1dcfcda31cdfdcfe1136d3713e4d1d1
 	</dependencies>
 
 	<build>

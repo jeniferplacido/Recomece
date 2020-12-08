@@ -6,7 +6,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "Tema")
@@ -21,7 +20,6 @@ public class ModelTema {
 	private String categoria;
 	
 	@Column
-	@NotNull
 	private String nome;
 	
 	@Column
@@ -58,17 +56,6 @@ public class ModelTema {
 	public void setClassificacaoIndicativa(int classificacaoIndicativa) {
 		this.classificacaoIndicativa = classificacaoIndicativa;
 	}
-<<<<<<< HEAD
-	
-	//Getters and Setters
-	
-=======
-
->>>>>>> 55916e4ab1dcfcda31cdfdcfe1136d3713e4d1d1
 	
 
-		
-	}
-	
-
-
+}
