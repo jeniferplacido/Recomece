@@ -58,12 +58,5 @@ public class ModelTema {
 	public void setClassificacaoIndicativa(int classificacaoIndicativa) {
 		this.classificacaoIndicativa = classificacaoIndicativa;
 	}
-	
-<<<<<<< HEAD:Model/ProjetoIntegrador/src/main/java/com/NetOngs/NetworkFeminino/ModelTema.java
-=======
 	//Getters and Setters
-	
-	
->>>>>>> ae6b969c06b266c1458a21c67fa634f03e07b583:Code/ProjetoIntegrador/src/main/java/com/NetOngs/NetworkFeminino/ModelTema.java
-
 }
