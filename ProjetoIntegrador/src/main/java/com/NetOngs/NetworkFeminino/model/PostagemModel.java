@@ -1,4 +1,4 @@
-package com.NetOngs.NetworkFeminino;
+package com.NetOngs.NetworkFeminino.model;
 
 import java.util.Date;
 
@@ -8,23 +8,21 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
-@Table(name = "Postagem")
+@Table(name = "postagem")
 public class PostagemModel {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id_postagem;
 
-	
 	@Column
 	private String texto;
 	
@@ -39,7 +37,13 @@ public class PostagemModel {
 
 	@ManyToOne
 	@JsonIgnoreProperties("postagem")
-	private ModelTema postagem;
+	private TemaModel postagem;
+	
+	@ManyToOne
+	@JsonIgnoreProperties("usuario")
+	private UsuarioModel usuario;
+	
+	
 	public Long getId_postagem() {
 		return id_postagem;
 	}
@@ -72,17 +76,21 @@ public class PostagemModel {
 		this.date = date;
 	}
 
-	public ModelTema getPostagem() {
+	public TemaModel getPostagem() {
 		return postagem;
 	}
 
-	public void setPostagem(ModelTema postagem) {
+	public void setPostagem(TemaModel postagem) {
 		this.postagem = postagem;
 	}
 
+	public UsuarioModel getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(UsuarioModel usuario) {
+		this.usuario = usuario;
+	}
 	
-	
-	
-	
-	
+
 }

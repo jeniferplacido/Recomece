@@ -1,4 +1,4 @@
-package com.NetOngs.NetworkFeminino;
+package com.NetOngs.NetworkFeminino.controller;
 
 import java.util.List;
 
@@ -9,32 +9,34 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+import com.NetOngs.NetworkFeminino.model.TemaModel;
+import com.NetOngs.NetworkFeminino.repository.TemaRepository;
+
 @RestController
 @RequestMapping("/")
-public class Controller implements WebMvcConfigurer {
+public class TemaController implements WebMvcConfigurer {
 	
 	public void addViewControllers(ViewControllerRegistry index) {
 		index.addViewController("/").setViewName("forward:/index.html");
 	}
 	
 	@Autowired
-	private TemaRepository repository;
+	private  TemaRepository repository;
 	
 	@PostMapping("/postar")
-	public ResponseEntity<ModelTema> post(@RequestBody ModelTema painel) {
+	public ResponseEntity<TemaModel> post(@RequestBody TemaModel painel) {
 		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(painel));
 	}
 	
 	
 	@GetMapping("/posts")
-	public List<ModelTema> pesquisarTodos() {
+	public List<TemaModel> pesquisarTodos() {
 		return repository.findAll();
 	}
 	
@@ -53,7 +55,7 @@ public class Controller implements WebMvcConfigurer {
 	}*/
 	
 	@GetMapping("/postagem/{id}")	
-	public ResponseEntity<ModelTema> GetById(@PathVariable long id) {
+	public ResponseEntity<TemaModel> GetById(@PathVariable long id) {
 		return repository.findById(id)
 				.map(resp -> ResponseEntity.ok(resp))
 				.orElse(ResponseEntity.notFound().build());
@@ -73,7 +75,7 @@ public class Controller implements WebMvcConfigurer {
 	
 	
 	@GetMapping("/categoria/{categoria}")
-	public ResponseEntity<List<ModelTema>> getByCategory(@PathVariable String categoria) {
+	public ResponseEntity<List<TemaModel>> getByCategory(@PathVariable String categoria) {
 		return ResponseEntity.ok(repository.findAllByCategoriaContainingIgnoreCase(categoria));
 	}
 	

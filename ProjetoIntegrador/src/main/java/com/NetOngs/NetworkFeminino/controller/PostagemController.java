@@ -1,4 +1,4 @@
-package com.NetOngs.NetworkFeminino;
+package com.NetOngs.NetworkFeminino.controller;
 
 import java.util.List;
 
@@ -15,9 +15,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.NetOngs.NetworkFeminino.model.PostagemModel;
+import com.NetOngs.NetworkFeminino.repository.PostagemRepository;
+
 @RestController
 @RequestMapping("/postagens")
-//@CrossOrigin("*")
+@CrossOrigin("*")
 public class PostagemController {
 
 	@Autowired
