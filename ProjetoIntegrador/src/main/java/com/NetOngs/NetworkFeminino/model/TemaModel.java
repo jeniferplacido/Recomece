@@ -1,7 +1,6 @@
 package com.NetOngs.NetworkFeminino.model;
 
 import java.util.List;
-
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,61 +9,31 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
-@Table(name = "tb_Tema")
-public class TemaModel {
-	@Id	
-	@Column
+@Table(name = "tb_tema")
+public class TemaModel 
+{
+	//ID
+	@Id 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id_tema;
+	private Long Id_tema;
 	
-	@Column
-	private String categoria;
+	//CHAVE ESTRANGEIRA
+	@OneToMany(mappedBy = "tema", cascade = CascadeType.ALL)
+	@JsonIgnoreProperties("tema")
+	private List<PostagemModel> postagem;
 	
 	@Column
 	private String nome;
-	
-	@Column
-	private int classificacaoIndicativa;
-	
-	@OneToMany(mappedBy = "postagem", cascade = CascadeType.ALL) 
-	@JsonIgnoreProperties("postagem")
-	private List<PostagemModel> postagem; 
 
 	public Long getId_tema() {
-		
-		return id_tema;
+		return Id_tema;
 	}
 
 	public void setId_tema(Long id_tema) {
-		this.id_tema = id_tema;
-	}
-
-	public String getCategoria() {
-		return categoria;
-	}
-
-	public void setCategoria(String categoria) {
-		this.categoria = categoria;
-	}
-
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
-	public int getClassificacaoIndicativa() {
-		return classificacaoIndicativa;
-	}
-
-	public void setClassificacaoIndicativa(int classificacaoIndicativa) {
-		this.classificacaoIndicativa = classificacaoIndicativa;
+		Id_tema = id_tema;
 	}
 
 	public List<PostagemModel> getPostagem() {
@@ -75,6 +44,15 @@ public class TemaModel {
 		this.postagem = postagem;
 	}
 
-	
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
 	
 }
+
+
+	
