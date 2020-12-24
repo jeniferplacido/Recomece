@@ -1,0 +1,13 @@
+package RedeOrganizacional.Recomece.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import RedeOrganizacional.Recomece.model.ComentarioModel;
+
+public interface ComentarioRepository extends JpaRepository<ComentarioModel, Long> {
+	
+	public List<ComentarioModel> findByTituloContainingIgnoreCase(String titulo);
+
+}

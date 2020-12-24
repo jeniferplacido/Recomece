@@ -1,0 +1,11 @@
+package RedeOrganizacional.Recomece.controller;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/usuario")
+@CrossOrigin("*")
+public class UsuarioController {
+
+}

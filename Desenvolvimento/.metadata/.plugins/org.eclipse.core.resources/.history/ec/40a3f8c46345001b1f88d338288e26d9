@@ -1,0 +1,59 @@
+package RedeOrganizacional.Recomece.model;
+
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "tb_Tema")
+public class TemaModel {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@OneToMany(mappedBy = "identificadorTema", cascade = CascadeType.ALL)
+	private List<PostagemModel>idTema;
+	
+	@Column
+	private String categoria;
+	
+	@Column
+	private String nome;
+
+	
+	
+	//Getters and Setters
+	
+	public List<PostagemModel> getIdTema() {
+		return idTema;
+	}
+
+	public void setIdTema(List<PostagemModel> idTema) {
+		this.idTema = idTema;
+	}
+
+	public String getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(String categoria) {
+		this.categoria = categoria;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	
+	
+}
