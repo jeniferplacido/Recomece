@@ -1,0 +1,5 @@
+package RedeOrganizacional.Recomece.seguranca;
+
+public class UserDetailsServiceImpl {
+
+}

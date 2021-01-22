@@ -1,0 +1,12 @@
+package RedeOrganizacional.Recomece.model;
+
+public class UserLogin {
+
+	private String nome;
+	
+	private String userName;
+	
+	private String senha;
+	
+	private String toker;
+}
