@@ -1,0 +1,35 @@
+.main-navbar {
+    height: 70px;
+    background-color: #c0f8c4;
+    padding-left: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.bt-color{
+    background-color: #F39B6D ;
+}
+.retangulo{
+
+    width: 1894px;
+    height: 650px;    
+    background: #3E6990;
+    
+}
+.textOne{
+position: absolute;
+width: 1816px;
+height: 471px;
+font-family: Squada One;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 76px;
+color: #FFFFFF;
+}
+.text{
+    font-size: 40px;
+}
+.text2{
+    font-size: 30px;
+}
