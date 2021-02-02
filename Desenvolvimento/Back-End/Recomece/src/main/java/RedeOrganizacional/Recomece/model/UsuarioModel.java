@@ -25,21 +25,14 @@ public class UsuarioModel {
 	
 	
 	@NotNull
-	@Size(min = 2, max = 100)
 	private String nome;
 	
 	@NotNull
-	@Size(min = 3, max = 50)
 	private String userName;
 	
 	@Column
 	private String email;
 	
-	@Column
-	private String telefone;
-	
-	@Column
-	private String sexo;
 	
 	@NotNull
 	private String senha;
@@ -50,10 +43,11 @@ public class UsuarioModel {
 	
 	private String tipo;
 	
+	/*
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("usuario")
 	private List<PostagemModel>postagem2;
-	
+	*/
 	
 	//////////////////////////////Integração com o Front //////////////////////////////////
 
@@ -97,22 +91,6 @@ public class UsuarioModel {
 		this.email = email;
 	}
 
-	public String getTelefone() {
-		return telefone;
-	}
-
-	public void setTelefone(String telefone) {
-		this.telefone = telefone;
-	}
-
-	public String getSexo() {
-		return sexo;
-	}
-
-	public void setSexo(String sexo) {
-		this.sexo = sexo;
-	}
-
 	public String getSenha() {
 		return senha;
 	}
@@ -153,6 +131,7 @@ public class UsuarioModel {
 		this.tipo = tipo;
 	}
 
+	/*
 	public List<PostagemModel> getPostagem2() {
 		return postagem2;
 	}
@@ -160,6 +139,7 @@ public class UsuarioModel {
 	public void setPostagem2(List<PostagemModel> postagem2) {
 		this.postagem2 = postagem2;
 	}
+	*/
 
 	public String getUserName() {
 		return userName;

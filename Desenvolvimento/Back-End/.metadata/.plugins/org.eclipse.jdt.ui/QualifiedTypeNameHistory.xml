@@ -55,4 +55,6 @@
     <fullyQualifiedTypeName name="RedeOrganizacional.Recomece.service.UsuarioService"/>
     <fullyQualifiedTypeName name="RedeOrganizacional.Recomece.model.UserLogin"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.CrossOrigin"/>
+    <fullyQualifiedTypeName name="io.swagger.models.HttpMethod"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpMethod"/>
 </qualifiedTypeNameHistroy>

@@ -23,12 +23,18 @@ import RedeOrganizacional.Recomece.service.UsuarioService;
 
 @RestController
 @RequestMapping("/usuarios")
-@CrossOrigin(origins = "*", allowedHeaders = "*")
+@CrossOrigin("*")
 public class UsuarioController {
+	
+	
+	@Autowired
+	private UsuarioRepository repository;
 	
 	@Autowired
 	private UsuarioService usuarioService; 
 
+	
+	//Métodos que usam a camada de segurança
 	@PostMapping("/logar")
 	public ResponseEntity <UserLogin> Autentication(@RequestBody Optional<UserLogin> user) {
 		return usuarioService.Logar(user).map(resp -> ResponseEntity.ok(resp))
@@ -40,44 +46,45 @@ public class UsuarioController {
 		return ResponseEntity.status(HttpStatus.CREATED)
 				.body(usuarioService.CadastrarUsuario(usuario));
 	}
+	//Métodos que usam a camada de segurança
 	
-//	@PostMapping
-//	public ResponseEntity<UsuarioModel> criar(@RequestBody UsuarioModel usuario) {
-//		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(usuario));
-//	}
-//	
-//	@GetMapping
-//	public ResponseEntity<List<UsuarioModel>> buscarTodos() {
-//		return ResponseEntity.ok(repository.findAll());
-//	}
-//	
-//	
-//	@GetMapping("/{id}")
-//	public ResponseEntity<UsuarioModel> buscarUm(@PathVariable Long id) {
-//		return repository.findById(id).map(usuarioId -> ResponseEntity.ok(usuarioId))
-//				.orElse(ResponseEntity.notFound().build());
-//	}
-//	
-//	@GetMapping("/nome/{nome}")
-//	public ResponseEntity<Optional<UsuarioModel>> buscarPorNome(@PathVariable String nome) {
-//		return ResponseEntity.ok(repository.findByNomeContainingIgnoreCase(nome));
-//	}
-//	
-//	@PutMapping("/{id}")
-//	public ResponseEntity<UsuarioModel> atualizar(@PathVariable Long id, @RequestBody UsuarioModel usuario) {
-//		usuario.setIdUsuario(id);
-//		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(usuario));
-//	}
-//
-//
-//	@DeleteMapping("/{id}")
-//	public String remover(@PathVariable Long id) {
-//		try {
-//			repository.deleteById(id);
-//		return "sucesso";
-//		}catch(Exception e) {
-//			return "Erro: " + e.getMessage();
-//		}
-//	}
+	@PostMapping
+	public ResponseEntity<UsuarioModel> criar(@RequestBody UsuarioModel usuario) {
+		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(usuario));
+	}
+	
+	@GetMapping
+	public ResponseEntity<List<UsuarioModel>> buscarTodos() {
+		return ResponseEntity.ok(repository.findAll());
+	}
+	
+	
+	@GetMapping("/{id}")
+	public ResponseEntity<UsuarioModel> buscarUm(@PathVariable Long id) {
+		return repository.findById(id).map(usuarioId -> ResponseEntity.ok(usuarioId))
+				.orElse(ResponseEntity.notFound().build());
+	}
+	
+	@GetMapping("/nome/{nome}")
+	public ResponseEntity<Optional<UsuarioModel>> buscarPorNome(@PathVariable String nome) {
+		return ResponseEntity.ok(repository.findByNomeContainingIgnoreCase(nome));
+	}
+	
+	@PutMapping("/{id}")
+	public ResponseEntity<UsuarioModel> atualizar(@PathVariable Long id, @RequestBody UsuarioModel usuario) {
+		usuario.setIdUsuario(id);
+		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(usuario));
+	}
+
+
+	@DeleteMapping("/{id}")
+	public String remover(@PathVariable Long id) {
+		try {
+			repository.deleteById(id);
+		return "sucesso";
+		}catch(Exception e) {
+			return "Erro: " + e.getMessage();
+		}
+	}
 	
 }

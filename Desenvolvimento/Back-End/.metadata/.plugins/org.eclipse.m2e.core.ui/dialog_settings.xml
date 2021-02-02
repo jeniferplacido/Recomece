@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\usuario\Desktop\Working\blogPessoal-api\blogPessoal"/>
 			<item value="C:\Users\usuario\Desktop\Working\ProjectRESET\Desenvolvimento\Recomece"/>
 		</list>
 		<list key="projectNameTemplate">

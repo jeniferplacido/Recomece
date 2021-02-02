@@ -21,7 +21,7 @@ public class TemaModel {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idTema;
 	
-	@OneToMany(mappedBy = "tema", cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "tema", cascade = CascadeType.REMOVE) //Alterando o cascade de .ALL para .REMOVE
 	@JsonIgnoreProperties("tema")
 	private List<PostagemModel>postagem;
 	
@@ -55,6 +55,14 @@ public class TemaModel {
 
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+
+	public List<PostagemModel> getPostagem() {
+		return postagem;
+	}
+
+	public void setPostagem(List<PostagemModel> postagem) {
+		this.postagem = postagem;
 	}
 
 
