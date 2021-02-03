@@ -1,6 +1,6 @@
 .glassmorphism {
-    background: #93B5C6;
-    box-shadow: 0 8px 32px 0 rgba(36, 43, 141, 0.281);
+    background: #93b5c657;
+    box-shadow: 0 8px 32px 0 rgb(36, 43, 141);
     backdrop-filter: blur( 7.0px);
     -webkit-backdrop-filter: blur( 7.0px);
     border-radius: 10px;
