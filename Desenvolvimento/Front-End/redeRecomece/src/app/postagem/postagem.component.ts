@@ -86,9 +86,8 @@ export class PostagemComponent implements OnInit {
       this.postagem = resp
       this.postagem = new Postagem()
       this.getAllTema()
+      this.getAllPostagens()
       alert('Postagem realizada com sucesso!')
     })
-
   }
-
 }

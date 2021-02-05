@@ -14,6 +14,8 @@ import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
 import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
 import { PostagemComponent } from './postagem/postagem.component';
 import { TopbarComponent } from './topbar/topbar.component';
+import { CarreiraComponent } from './carreira/carreira.component';
+import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { TopbarComponent } from './topbar/topbar.component';
     TemaEditComponent,
     TemaDeleteComponent,
     PostagemComponent,
-    TopbarComponent
+    TopbarComponent,
+    CarreiraComponent,
+    PostagemEditComponent
   ],
   imports: [
     BrowserModule,

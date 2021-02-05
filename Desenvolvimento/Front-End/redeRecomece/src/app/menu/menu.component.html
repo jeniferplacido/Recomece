@@ -166,6 +166,16 @@
                         </div>
 
                         <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input [(ngModel)]='user.email' class="form-control" type="password" name="email" id="email" placeholder="Confirme sua senha">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bio">Biografia: </label>
+                            <input [(ngModel)]='user.bio' class="form-control" type="password" name="bio" id="bio" placeholder="Confirme sua senha">
+                        </div>
+
+                        <div class="form-group">
                             <label for="tipo">Tipo de Usuário</label>
                             <select class="form-control" name="tipo" id="tipo" (change)='tipoUser($event)'>
                                 <option>Selecione um tipo de usuário:</option>

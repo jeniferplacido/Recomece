@@ -5,5 +5,4 @@ export class Tema{
     public categoria: string;
     public nome: string;
     public postagem: Postagem[]
-
 }
