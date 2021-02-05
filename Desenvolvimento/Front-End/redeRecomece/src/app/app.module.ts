@@ -16,6 +16,10 @@ import { PostagemComponent } from './postagem/postagem.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { CarreiraComponent } from './carreira/carreira.component';
 import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
+import { FooterComponent } from './footer/footer.component';
+import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
+import { OngsComponent } from './ongs/ongs.component';
+//import { PerfilComponent } from './perfil/perfil.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,11 @@ import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.compon
     PostagemComponent,
     TopbarComponent,
     CarreiraComponent,
-    PostagemEditComponent
+    PostagemEditComponent,
+    FooterComponent,
+    PostagemDeleteComponent,
+    OngsComponent,
+    //PerfilComponent
   ],
   imports: [
     BrowserModule,
