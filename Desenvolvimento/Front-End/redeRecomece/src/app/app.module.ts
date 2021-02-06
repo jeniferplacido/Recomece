@@ -19,7 +19,7 @@ import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.compon
 import { FooterComponent } from './footer/footer.component';
 import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
 import { OngsComponent } from './ongs/ongs.component';
-//import { PerfilComponent } from './perfil/perfil.component';
+import { PerfilComponent } from './perfil/perfil.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +38,7 @@ import { OngsComponent } from './ongs/ongs.component';
     FooterComponent,
     PostagemDeleteComponent,
     OngsComponent,
-    //PerfilComponent
+    PerfilComponent,
   ],
   imports: [
     BrowserModule,

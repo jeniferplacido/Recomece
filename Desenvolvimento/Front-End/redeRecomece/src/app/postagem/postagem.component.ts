@@ -25,6 +25,8 @@ export class PostagemComponent implements OnInit {
   user: User = new User()
   idUser = environment.id
 
+  nome = environment.nome
+  foto = environment. foto
 
   constructor(
     private router: Router,
@@ -89,5 +91,15 @@ export class PostagemComponent implements OnInit {
       this.getAllPostagens()
       alert('Postagem realizada com sucesso!')
     })
+  }
+
+
+
+  sair(){
+    this.router.navigate(['/menu'])
+    environment.token = ''
+    environment.nome = ''
+    environment.foto = ''
+    environment.id = 0
   }
 }

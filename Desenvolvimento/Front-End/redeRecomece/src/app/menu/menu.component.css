@@ -1,3 +1,8 @@
+.altura-carrosel {
+    height: 730px;
+    width: 730;
+}
+
 .main-navbar {
     height: 70px;
     background-color: RosyBrown;
@@ -24,7 +29,6 @@
 }
 
 .retangulo {
-    width: 1350px;
     height: 650px;
     background: Lavender;
 }

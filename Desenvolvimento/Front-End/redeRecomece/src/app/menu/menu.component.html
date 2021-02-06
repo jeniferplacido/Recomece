@@ -31,7 +31,6 @@
 <!--Fim NavBar-->
 
 <!--Carrosel-inicio-->
-
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -40,24 +39,24 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img class="d-block w-100" src="https://i.imgur.com/z4rxyg2.jpg" alt="Primeiro Slide">
+            <img class="d-block w-100 altura-carrosel" src="https://i.imgur.com/z4rxyg2.jpg" alt="Primeiro Slide">
             <div class="carousel-caption d-none d-md-block image-1">
-                <h5>Somos mulheres fortes, e aqui você tem a oportunidade</h5>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas a expedita adipisci molestias dolor quaerat amet veniam similique dolorem possimus, ipsum perferendis, molestiae sit necessitatibus nemo dolorum placeat perspiciatis? Quod?</p>
+                <h5>Seja a protagonista forte que você quer ver no mundo!</h5>
+                <p>Quando a vida bater forte e sua alma sangrar, quando esse mundo pesado lhe ferir, lhe esmagar... É hora do recomeço. Recomece a LUTAR. </p>
             </div>
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="https://i.imgur.com/n8Aor24.png" alt="Segundo Slide">
+            <img class="d-block w-100 altura-carrosel" src="https://i.imgur.com/n8Aor24.png" alt="Segundo Slide">
             <div class="carousel-caption d-none d-md-block image-2">
-                <h5>Somos mulheres fortes, e aqui você tem a oportunidade</h5>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas a expedita adipisci molestias dolor quaerat amet veniam similique dolorem possimus, ipsum perferendis, molestiae sit necessitatibus nemo dolorum placeat perspiciatis? Quod?</p>
+                <h5>Encontre força no seu interior e coloque para fora toda a garra e determinação que você possui!</h5>
+                <p>Quando tudo for escuro e nada iluminar, quando tudo for incerto e você só duvidar... É hora do recomeço. Recomece a ACREDITAR. </p>
             </div>
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="https://i.imgur.com/WKNTrLp.png" alt="Terceiro Slide">
+            <img class="d-block w-100 altura-carrosel" src="https://i.imgur.com/395LUyu.jpg" alt="Terceiro Slide">
             <div class="carousel-caption d-none d-md-block image-3">
-                <h5>Somos mulheres fortes, e aqui você tem a oportunidade</h5>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas a expedita adipisci molestias dolor quaerat amet veniam similique dolorem possimus, ipsum perferendis, molestiae sit necessitatibus nemo dolorum placeat perspiciatis? Quod?</p>
+                <h5>Seja uma mulher que levanta outras mulheres!</h5>
+                <p>Quando a estrada for longa e seu corpo fraquejar, quando não houver caminho nem um lugar pra chegar...É hora do recomeço. Recomece a CAMINHAR. </p>
             </div>
         </div>
     </div>
@@ -78,7 +77,8 @@
         <p class="display-4 font-italic font-weight-bold text-dark text">Ambiente de Integração para o seu Desenvolvimento!
         </p>
         <p class="lead text-dark text2"> Para você mulher que decidiu reescrever as linhas do seu destino, faça parte da nossa comunidade feminina.</p>
-        <img src="https://i.imgur.com/GQzzLEd.png" alt="Mulheres com bandeira Recomece" width="800px" height="90px" class="img-fluid  float-sm-right">
+        <br><br>
+        <img class="mt-5" src="https://i.imgur.com/GQzzLEd.png" alt="Mulheres com bandeira Recomece" width="800px" height="90px" class="img-fluid  float-sm-right">
     </div>
 
     <!--Fim Intro-->
@@ -167,12 +167,12 @@
 
                         <div class="form-group">
                             <label for="email">E-mail</label>
-                            <input [(ngModel)]='user.email' class="form-control" type="password" name="email" id="email" placeholder="Confirme sua senha">
+                            <input [(ngModel)]='user.email' class="form-control" type="text" name="email" id="email" placeholder="Campo do email">
                         </div>
 
                         <div class="form-group">
                             <label for="bio">Biografia: </label>
-                            <input [(ngModel)]='user.bio' class="form-control" type="password" name="bio" id="bio" placeholder="Confirme sua senha">
+                            <input [(ngModel)]='user.bio' class="form-control" type="text" name="bio" id="bio" placeholder="Descrição ao perfil">
                         </div>
 
                         <div class="form-group">
