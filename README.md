@@ -1,5 +1,5 @@
 <h1>
- NetONGs 🌎</h1>
+ Recomece</h1>
 <h3>
 Integrantes (Grupo 4): </h3>
 <p>
