@@ -20,6 +20,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
 import { OngsComponent } from './ongs/ongs.component';
 import { PerfilComponent } from './perfil/perfil.component';
+import { HomensComponent } from './homens/homens.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { PerfilComponent } from './perfil/perfil.component';
     PostagemDeleteComponent,
     OngsComponent,
     PerfilComponent,
+    HomensComponent,
   ],
   imports: [
     BrowserModule,
